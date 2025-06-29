@@ -1,0 +1,12 @@
+# BEFORE FIREWALL CONFIGURATION
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+25/tcp   open     smtp
+80/tcp   open     http
+
+# AFTER FIREWALL CONFIGURATION
+PORT    STATE    SERVICE
+22/tcp  open     ssh
+25/tcp  filtered smtp
+80/tcp  open     http
+443/tcp open     https
